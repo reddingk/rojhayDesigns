@@ -1,0 +1,16 @@
+@mobile-screen: ~"only screen and (max-width: 640px)";
+
+@font-size: 16px;
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Raleway|Roboto');
+
+
+html, body {
+  height: 100%;
+  color: #000;
+  font-size: @font-size;
+  font-family: 'Roboto', sans-serif;
+  font-family: 'Raleway', sans-serif;
+  font-family: 'Montserrat', sans-serif;
+
+  @media @mobile-screen { font-size: 12px; }
+}

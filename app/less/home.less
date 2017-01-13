@@ -1,0 +1,57 @@
+.home-card{
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+
+  background: #e43a15; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #e43a15 , #e65245); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #e43a15 , #e65245); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  .main-logo {
+    width: 40%;
+    position: absolute;
+    z-index: 3;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -40%);
+
+    -webkit-animation:2.5s fadeIn ease;
+    animation:2.5s fadeIn ease;
+    img { width: 100%; }
+  }
+  .content {
+    position: absolute;
+    bottom: 20%;
+    left: 50%;
+    transform: translate(-50%, -5%);
+    text-align: center;
+
+    .content-area {
+      display: block;
+      background-color: rgba(0,0,0,0.3);
+      padding: 10px;
+      color: rgba(255,255,255,1);
+
+      -webkit-animation:1s bounceIn ease backwards;
+      animation:1s bounceIn ease backwards;
+
+      &.content-text { font-size: 2rem; animation-delay: 2.5s;}
+      &.content-contact { animation-delay: 3.5s;}
+      &+.content-area { margin-top: 10px; }
+    }
+  }
+
+  .bouncing-ball {
+    position: absolute;
+    z-index: 2;
+    border-radius: 50%;
+    background-color: rgba(255,255,255,1);
+
+    -webkit-animation:1s fadeIn ease backwards;
+    animation:1s fadeIn ease backwards;
+
+    animation-delay: 5s;
+  }
+
+
+}
